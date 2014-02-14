@@ -5,7 +5,7 @@
    [schema.coerce :as coerce]
    [pail-schema-example.people :as p])
   (:use cascalog.api)
-  (:import [pail-schema DataUnitPailStructure]))
+  (:import [pail-schema-example DataUnitPailStructure]))
 
 ;data
 
