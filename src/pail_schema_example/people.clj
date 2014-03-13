@@ -1,6 +1,5 @@
-(ns pail-schema.people
-  (:require [schema.core :as s]
-            ))
+(ns pail-schema-example.people
+  (:require [schema.core :as s]))
 
 ; a location structure.
 (def Location
@@ -71,7 +70,7 @@
 
 ;helpers to build Data Units.
 (defn create-person-property [id property]
-  (dataunit :property (person-property [id property])))
+  (dataunit :person-property (person-property id property)))
 
 (defn create-friendshipedge [id1 id2]
-  (dataunit :friendshipedge (friendshipedge [id1 id2])))
+  (dataunit :friendshipedge (friendshipedge id1 id2)))
